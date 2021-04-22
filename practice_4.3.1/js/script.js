@@ -10,12 +10,12 @@ console.log(computer);
 
 if (player > 2 || player < 0) {
     console.log('play by the rules!');
-} else if ((player == 0 && computer == 1) ||
-            ((player == 0 || player == 1) && computer == 2)) {
-    console.log('computer win');
+} else if ((player == rock && computer == scissors) || (player == paper && computer	== rock)
+	|| (player == scissors && computer == paper)) {
+	console.log('player win')	
 } else if (player == computer) {
-    console.log('tie');
+	console.log('tie');
 } else {
-    console.log('player win');
+	console.log('computer win')
 }
 // опишем все условия и будем выводить в консоль 'computer win' или 'player win'
