@@ -10,10 +10,10 @@ console.log(computer);
 
 if (player > 2 || player < 0) {
     console.log('play by the rules!');
-} else if ((player == rock && computer == scissors) || (player == paper && computer	== rock)
-	|| (player == scissors && computer == paper)) {
+} else if ((player === rock && computer === scissors) || (player === paper && computer === rock)
+	|| (player === scissors && computer === paper)) {
 	console.log('player win')	
-} else if (player == computer) {
+} else if (player === computer) {
 	console.log('tie');
 } else {
 	console.log('computer win')
