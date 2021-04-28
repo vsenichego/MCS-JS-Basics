@@ -15,3 +15,19 @@ let bigArray = [
 ]
 
 console.log(bigArray[0])
+
+let bigObject = {
+  names: ['Vasya', 'Petya', 'Sasha'],
+  grades : [
+    {
+      intern: 1,
+      junior: 2
+    },
+    {
+      middle: 3,
+      senior: 2
+    }
+  ]
+}
+console.log(bigObject.names[1]);
+console.log(bigObject.grades[1].middle);
